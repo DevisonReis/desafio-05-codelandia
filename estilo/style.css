@@ -77,8 +77,8 @@ p {
     font-weight: 600;
     padding: 10px;
     margin-left: 15px;
-    margin-right: 40px;
-    width: 150px;
+    margin-right: 20px;
+    width: 160px;
     height: 40px;
     background-color: #658E76;
     color: white;
@@ -86,37 +86,16 @@ p {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    transform: skew(-30deg);
 }
 
-.assista-agora:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    top: 0px;
-    position: absolute;
-    border-top: 40px solid transparent;
-    border-right: 20px solid #658E76;
-    left: -20px;
-}
-
-.assista-agora::after {
-    content: "";
-    width: 0px;
-    height: 0px;
-    top: 0px;
-    position: absolute;
-    border-bottom: 40px solid transparent;
-    border-left: 20px solid #658E76;
-    right: -20px;
-}
-
-.assista-agora:hover {
+.assista-agora:hover span {
     text-decoration: underline;
 }
 
 .logo-play {
     position: relative;
-    left: -185px;
+    left: -170px;
     top: 4px;
     cursor: pointer;
 }
@@ -124,7 +103,7 @@ p {
 .assista-trailer {
     font-weight: 600;
     padding: 10px;
-    width: 150px;
+    width: 160px;
     color: white;
     background-color: #48756a;
     border-style: none;
@@ -132,6 +111,12 @@ p {
     display: inline-block;
     position: relative;
     cursor: pointer;
+    transform: skew(-30deg);
+}
+
+span {
+    display: inline-block;
+    transform: skew(30deg);
 }
 
 .assista-trailer:hover {
